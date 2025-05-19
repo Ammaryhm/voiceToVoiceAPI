@@ -26,9 +26,6 @@ def user_points_details(loyalty_membership_number: str) -> str:
 
 
 def user_ticket_status(ticket_number: str) -> str:
-    """
-    Returns a formatted message with the ticket status for the given ticket number.
-    """
     logger.info("Tool get_ticket_status called with input: %s", ticket_number)
     ticket_details = {
         "KVPMH5": "On Hold",
